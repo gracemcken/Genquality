@@ -1,0 +1,10 @@
+
+/* Navbar settings */
+.active {
+    background-color: white;
+}
+
+.navbar-nav>li>a {
+    color: black;
+    font-weight: bold;
+}
