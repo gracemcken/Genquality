@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+}
+
+.main-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: lightblue;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    overflow: hidden;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+.gender-bg {
+    max-width: 1000px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.gender-bg::before {
+    content: "\f221";
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    font-size: 600px;
+    background: radial-gradient(rgba(255, 0, 0, 0.3), transparent) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+}
+
+.gender-bg::after {
+    content: "\f222";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    font-family: 'FontAwesome';
+    font-size: 600px;
+    background: radial-gradient(rgba(0, 0, 255, 0.3), transparent) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+}
+
+/* Card component */
+.quiz-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    z-index: 2;
+}
+
+.card-wrapper {
+    border-radius: 10px;
+    background-color: lightblue;
+    opacity: .9;
+}
+
+.quiz-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(255, 250, 250, 0.4), rgba(0, 0, 0, 0.1));
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.question {
+    padding-bottom: 1rem;
+}
+
+.question h2 {
+    margin-top: 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.button-container button {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    border-radius: 0;
+}
+
+.button-container .yes {
+    color: green;
+}
+
+.button-container .no {
+    color: red;
+}
+
+.button-container i {
+    font-size: 3rem;
+}
+
+.button-container .button:focus {
+    outline: none;
+}
+
+.button-container .border-right {
+    border-right: 2px solid #999;
+}
+
+/* Answer Popup */
+.answer-popup {
+    position: absolute;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.quiz-card .wrong {
+    color: red;
+    margin-top: 0;
+}
+
+.quiz-card .correct {
+    color: green;
+}
+
+.quiz-card i {
+    font-size: 3rem;
+    transform: translate(0, 5px);
+}

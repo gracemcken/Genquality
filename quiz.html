@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome cdn CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/quiz/style.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <header>
+        <!-- Nav will go here -->
+    </header>
+    <!-- Quiz container -->
+    <main class="main-container">
+        <div class="gender-bg"></div>
+
+        <div class="quiz-container">
+
+            <!-- Temporary Quiz card. Will be generated via JS -->
+            <div class="card-wrapper">
+                <div class="quiz-card">
+                    <div class="question">
+                        <h2>Question 1</h2>
+                        <p>What is the capital of France?</p>
+                    </div>
+                    <div class="button-container">
+
+                        <button class="border-right yes"><i class="fa-solid fa-check"></i></button>
+
+                        <button class="no"><i class="fa-solid fa-times"></i></button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="card-wrapper answer-popup ">
+                <div class="quiz-card">
+                    <h3 class="correct"><i class="fa-solid fa-check"></i></h3>
+                    <p>The correct answer is Paris</p>
+                </div>
+            </div> -->
+
+            <div class="card-wrapper answer-popup ">
+                <div class="quiz-card">
+                    <h3 class="wrong"><i class="fa-solid fa-times"></i></h3>
+                    <p>The correct answer is Paris</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Main JS script -->
+    <script src="assets/quiz/script.js"></script>
+
+</body>
+
+</html>
