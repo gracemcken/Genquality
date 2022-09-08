@@ -1,4 +1,15 @@
 
+/* Navbar settings */
+.active {
+    background-color: white;
+}
+
+.navbar-nav>li>a {
+    color: black;
+    font-weight: bold;
+
+}
+
 /* About page */
 
 main {
@@ -41,14 +52,4 @@ body {
     .text_container {
         width: 300px;
     }
-
-/* Navbar settings */
-.active {
-    background-color: white;
-}
-
-.navbar-nav>li>a {
-    color: black;
-    font-weight: bold;
-
 }
