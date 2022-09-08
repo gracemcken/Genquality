@@ -1,4 +1,5 @@
 
+/* All pages background color */
 body {
     background: radial-gradient(circle at right top, #FDE2E4, #DBE7E4)
 }
@@ -19,10 +20,6 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-body {
-    background-color: antiquewhite;
 }
 
 .about {
