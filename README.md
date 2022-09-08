@@ -1,12 +1,32 @@
-# Genquality
+![By Team'Quality](project_files/readme_files/logo-readme.png)
+- [Site Overview](#site-overview)
+  - [Goal](#goal)
+  - [Technologies used](#technologies-used)
+  - [User Stories](#user-stories)
+  - [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Future Features](#future-features)
+  - [Design](#design)
+    - [Wireframes](#wireframes)
+    - [Typography](#typography)
+    - [Images](#images)
+    - [Colour Scheme](#colour-scheme)
+  - [Testing](#testing)
+  - [The Team](#the-team)
+- [Credits](#credits)
+    - [Github cards](#github-cards)
+    - [Images](#images-1)
+    - [Version Control](#version-control)
 
-## Wireframe of the project
-[Wireframe](project_files/wireframes/wireframe.png)
+# Site Overview
+Genquality is a website built as a project for September's Hackathon with Code Institute, Deloitte and Trust in Soda. The theme given was 'Closing the gender gap' and so we decided a good way to tackle this issue was with an educational and enlightening quiz, along with some resources and information on how the user can make a difference.
 
+## Goal
+The goal of our website is to see how aware the user really is about the gender gap. Some users might be shocked by some of the facts and statistics, while others may not. For those with less knowledge about the topic, we want to provide resources where they can learn more and also how they can help close the gap in their workplace and their life. The overall aim of this project is to bring awareness to the inequality in workplaces, each gender being affected in different ways.
 
-# https://github.com/petrugio
+<hr>
 
-# Technologies used
+## Technologies used
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5) for the contents and structure of the website.
 - [CSS3](https://en.wikipedia.org/wiki/CSS) for the styling and animations.
@@ -23,12 +43,55 @@
 - [Pesticide Chrome extension](https://chrome.google.com/webstore/detail/pesticide-for-chrome-with/neonnmencpneifkhlmhmfhfiklgjmloi) during development.
 - [Am I Responsive](http://ami.responsivedesign.is/) for testing and to make responsive image.
 
+## User Stories
+
+## Features
+
+### Existing Features
+
+### Future Features
+
+## Design
+
+### Wireframes
+
+[Wireframe](project_files/wireframes/wireframe.png)
+
+### Typography
+
+### Images
+
+### Colour Scheme
+
+For our colour scheme, we used coolors.co to generate a palette that we felt was neutral enough not to bias any particular gender, and was also light enough that text and other images would contrast well with the colours. 
+![Colour Scheme](assets/../project_files/readme_files/colour-palette.png)
+
+## Testing
+
+
+
+## The Team
+
+* https://github.com/petrugio
+* https://github.com/Raivis80
+* https://github.com/lukaszkukla
+* https://github.com/Tiyko
+* https://github.com/gracemcken
+
+
+
 <hr>
 
 # Credits
 
 ### Github cards
 Github cards were generated using [GitHub Dev Widget](https://github-devprofile-card.netlify.app/generate).
+
+### Images
+* Some images were taken from [pexels.com](pexels.com).
+* [This image](assets/images/gender-equality.jpg) by <a href="https://www.freepik.com/free-vector/gender-equality-concept_8944679.htm#query=gender%20equality&position=13&from_view=keyword">Freepik</a>
+* [This image](assets/images/equal.jpeg) by <a href="https://www.freepik.com/free-vector/gender-equality-concept-with-man-woman_8786149.htm#query=gender%20equality&position=17&from_view=keyword">Freepik</a>
+* [This image](assets/images/equality2.jpeg) by <a href="https://www.freepik.com/free-vector/gender-equality-illustration-style_8918398.htm#query=gender%20equality&position=4&from_view=keyword">Freepik</a>
 
 <hr>
 
