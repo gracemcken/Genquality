@@ -1,24 +1,27 @@
 # Genquality by Team'quality
 
 # Table of Contents
-* [Site Overview](#site-overview)
-* [Goal](#goal)
-* [Technologies Used](#technologies-used)
-* [User Stories](#user-stories)
-* [Features](#features)
-    * [Existing Features](#existing-features)
-    * [Future Features](#future-features)
-* [Design](#design) 
-    * [Wireframes](#wireframes)
-    * [Typography](#typography)
-    * [Images](#images)
-    * [Colour Scheme](#colour-scheme)
-* [Testing](#testing)
-    * [Manual Testing](#manual-testing)
-    * [Lighthouse Testing](#lighthouse-testing)
-    * [Validator Testing](#validator-testing)
-    * [Bugs](#bugs)  
-* [Credits](#credits)  
+- [Genquality by Team'quality](#genquality-by-teamquality)
+- [Table of Contents](#table-of-contents)
+- [Site Overview](#site-overview)
+  - [Goal](#goal)
+  - [Technologies used](#technologies-used)
+  - [User Stories](#user-stories)
+  - [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Future Features](#future-features)
+  - [Design](#design)
+    - [Wireframes](#wireframes)
+    - [Typography](#typography)
+    - [Images](#images)
+    - [Colour Scheme](#colour-scheme)
+  - [Testing](#testing)
+  - [The Team](#the-team)
+- [https://github.com/petrugio](#httpsgithubcompetrugio)
+- [Credits](#credits)
+    - [Github cards](#github-cards)
+    - [Images](#images-1)
+    - [Version Control](#version-control)
 
 # Site Overview
 Genquality is a website built as a project for September's Hackathon with Code Institute, Deloitte and Trust in Soda. The theme given was 'Closing the gender gap' and so we decided a good way to tackle this issue was with an educational and enlightening quiz, along with some resources and information on how the user can make a difference.
@@ -65,6 +68,9 @@ The goal of our website is to see how aware the user really is about the gender 
 
 ### Colour Scheme
 
+For our colour scheme, we used coolors.co to generate a palette that we felt was neutral enough not to bias any particular gender, and was also light enough that text and other images would contrast well with the colours. 
+![Colour Scheme](assets/../project_files/readme_files/colour-palette.png)
+
 ## Testing
 
 
@@ -81,6 +87,12 @@ The goal of our website is to see how aware the user really is about the gender 
 
 ### Github cards
 Github cards were generated using [GitHub Dev Widget](https://github-devprofile-card.netlify.app/generate).
+
+### Images
+* Some images were taken from [pexels.com](pexels.com).
+* [This image](assets/images/gender-equality.jpg) by <a href="https://www.freepik.com/free-vector/gender-equality-concept_8944679.htm#query=gender%20equality&position=13&from_view=keyword">Freepik</a>
+* [This image](assets/images/equal.jpeg) by <a href="https://www.freepik.com/free-vector/gender-equality-concept-with-man-woman_8786149.htm#query=gender%20equality&position=17&from_view=keyword">Freepik</a>
+* [This image](assets/images/equality2.jpeg) by <a href="https://www.freepik.com/free-vector/gender-equality-illustration-style_8918398.htm#query=gender%20equality&position=4&from_view=keyword">Freepik</a>
 
 <hr>
 
