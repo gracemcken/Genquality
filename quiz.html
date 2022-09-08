@@ -26,32 +26,18 @@
             <!-- Temporary Quiz card. Will be generated via JS -->
             <div class="card-wrapper">
                 <div class="quiz-card">
-                    <div class="question">
-                        <h2>Question 1</h2>
-                        <p>What is the capital of France?</p>
-                    </div>
+                    <div id="quiz-El"></div>
                     <div class="button-container">
+                        <button type="button" id="btn-true" class="border-right true" aria-label="Button True"><i
+                                class="fa-solid fa-check"></i></button>
 
-                        <button class="border-right yes"><i class="fa-solid fa-check"></i></button>
-
-                        <button class="no"><i class="fa-solid fa-times"></i></button>
-
+                        <button type="button" id="btn-false" class="false" aria-label="Button False"><i class="fa-solid fa-times"></i></button>
                     </div>
                 </div>
             </div>
 
-            <!-- <div class="card-wrapper answer-popup ">
-                <div class="quiz-card">
-                    <h3 class="correct"><i class="fa-solid fa-check"></i></h3>
-                    <p>The correct answer is Paris</p>
-                </div>
-            </div> -->
-
-            <div class="card-wrapper answer-popup ">
-                <div class="quiz-card">
-                    <h3 class="wrong"><i class="fa-solid fa-times"></i></h3>
-                    <p>The correct answer is Paris</p>
-                </div>
+            <div class="answer-popup hidden">
+                <!-- Quiz answers injected from JS -->
             </div>
         </div>
 
