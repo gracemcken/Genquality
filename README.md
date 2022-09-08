@@ -52,6 +52,7 @@ The goal of our website is to see how aware the user really is about the gender 
 ### Future Features
 
 ## Design
+We went into this project with the aim of being unbiased to any gender, and also making the information as clear and concise as possible. 
 
 ### Wireframes
 
@@ -59,7 +60,11 @@ The goal of our website is to see how aware the user really is about the gender 
 
 ### Typography
 
+For our fonts, we decided to use 'Karla', a sans serif font, and 'Inconsolata'. We felt these two fonts complimented each other well; the simplicity of 'Inconsolata' helping us portray our information as factual and official.
+
 ### Images
+
+Images that were used varied from stock images of co-workers, to protest signs and cartoon illustrations. We wanted to show all the different sides to this topic and we feel the images we've chosen show this.
 
 ### Colour Scheme
 
