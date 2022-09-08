@@ -1,8 +1,4 @@
-# Genquality by Team'quality
-
-# Table of Contents
-- [Genquality by Team'quality](#genquality-by-teamquality)
-- [Table of Contents](#table-of-contents)
+![By Team'Quality](project_files/readme_files/logo-readme.png)
 - [Site Overview](#site-overview)
   - [Goal](#goal)
   - [Technologies used](#technologies-used)
@@ -17,7 +13,6 @@
     - [Colour Scheme](#colour-scheme)
   - [Testing](#testing)
   - [The Team](#the-team)
-- [https://github.com/petrugio](#httpsgithubcompetrugio)
 - [Credits](#credits)
     - [Github cards](#github-cards)
     - [Images](#images-1)
@@ -77,7 +72,11 @@ For our colour scheme, we used coolors.co to generate a palette that we felt was
 
 ## The Team
 
-# https://github.com/petrugio
+* https://github.com/petrugio
+* https://github.com/Raivis80
+* https://github.com/lukaszkukla
+* https://github.com/Tiyko
+* https://github.com/gracemcken
 
 
 
