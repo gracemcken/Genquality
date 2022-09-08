@@ -1,0 +1,72 @@
+/* colors used for the website */
+
+:root {
+    --rep-red: #A20F88;
+    --violet: #B983FF;
+    --grey: #3A3A3A;
+    --grey: #FAFAFA;
+    --light-grey-transparent: #f1f1f140;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+/* global styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--grey);
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.main-wrapper {
+    width: 100%;
+    background: var(--violet);
+    padding-top: 5rem;    
+}
+
+/* navbar */
+.navbar {
+    width: 100%;
+    margin-bottom: 0;
+    position: fixed;
+}
+
+/* hero */
+
+.hero-text {
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    text-align: center;
+    width: 100%;
+    top: 8rem;
+    background-color: var(--light-grey-transparent);
+    position: absolute;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 11rem 1rem 1rem 1rem;
+}
+
+.padthai {
+    padding-bottom: 1rem;
+}
