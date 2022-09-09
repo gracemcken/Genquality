@@ -70,6 +70,10 @@ a {
     margin: 0;
 }
 
+.mc-0 {
+    margin: 0 auto;
+}
+
 .pt-3 {
     padding-top: 3rem;
 }
@@ -114,6 +118,7 @@ a {
 .hero-text {
     font-size: 2rem;
     padding: 1rem;
+    padding-left: 3rem;
     text-align: center;
     bottom: 2rem;
     background-color: var(--light-grey-transparent);
@@ -122,10 +127,21 @@ a {
     position: absolute;
 }
 
+.row {
+    margin: 0;
+}
+
 .content {
     margin: 0 auto;
     padding: 1rem;
     padding-top: 3rem;
+}
+
+.col-6-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 /* About page */
