@@ -47,14 +47,13 @@ body {
 
 body {
     font-size: 1.8rem;
-    color: var(--grey);
     font-family: "Poppins", sans-serif;
     background: radial-gradient(circle at right top, #FDE2E4, #DBE7E4)
 }
 
 a {
     text-decoration: none;
-    color: var(--grey);
+    color: orangered;
 }
 
 .main-wrapper {
@@ -185,28 +184,63 @@ h3 > a {
 .main-resource {
     width: 100vw;
     margin: 0;
-}
-
-.top-main{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+.top-main,
+.resource-secondary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.resource-secondary {
+    width: 80%;
 }
 
 .top-image-container {
     width: 100%;
     display: flex;
     justify-content: center;
+}
 
+.main-text-container {
+    width: 50%;
 }
 
 .resource-main-img {
     width: 100%;
     height: 50vh;
-    margin-top: 50px
+    margin-top: 50px;
+    box-shadow: 0 0 0.625rem 0.3125rem rgb(0 0 0 / 50%);
 }
 
+.resource-secondary-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resource-secondary-image-container {
+    width: 40%;
+}
+
+.resource-secondary-image {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 0.625rem 0.3125rem rgb(0 0 0 / 50%);
+}
+
+.secondary-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 37.5%;
+}
 
 /* Small screen settings */
 @media screen and (min-width: 576px) {
