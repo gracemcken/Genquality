@@ -65,6 +65,7 @@
     background-color: lightblue;
     opacity: .9;
     transition: background-color .5s ease-in-out;
+    position: relative;
 }
 
 .quiz-card {
@@ -87,17 +88,17 @@
 }
 
 .quiz-card h3{
-    font-size: 1.2rem;
-    margin: 0;
+    font-size: 2.2rem;
+    margin-top: 0;
 }
 
 .question h2 {
-    margin: 0;
+    margin-top: 0;
 }
 
 .quiz-card p,
 .question p {
-    font-size: 1.1rem;
+    font-size: 18px;
 }
 
 
@@ -108,7 +109,8 @@
     width: 100%;
 }
 
-.button-container button {
+/* Buttons */
+.card-wrapper button {
     font-size: 1.5rem;
     text-transform: uppercase;
     background-color: transparent;
@@ -118,11 +120,11 @@
     cursor: pointer;
 }
 
-.button-container button i {
+.card-wrapper button i {
     transition: transform 0.3s ease-in-out;
 }
 
-.button-container button:hover i {
+.card-wrapper button:hover i {
     transform: scale(1.2);
 }
 
@@ -134,16 +136,31 @@
     color: red;
 }
 
-.button-container i {
+.card-wrapper i {
     font-size: 3rem;
 }
 
-.button-container .button:focus {
+.card-wrapper .button:focus {
     outline: none;
+}
+
+.card-wrapper button::-moz-focus-inner {
+    border: 0;
 }
 
 .button-container .border-right {
     border-right: 2px solid #999;
+}
+
+.btn-next {
+    max-width: 30px !important;
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    padding: 1rem;
+    color: green;
+    opacity: 0;
+    display: none;
 }
 
 
@@ -238,10 +255,10 @@
     size: 0;
 }
 
-.answer-popup.show {
+.show {
     opacity: .9;
 }
 
-.answer-popup.hide {
+.hide {
     opacity: 0;
 }
