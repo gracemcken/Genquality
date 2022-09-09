@@ -55,6 +55,7 @@ a {
     width: 100%;
     background: var(--grey-blue);
     padding-top: 5rem;
+    margin: 0 auto;
 }
 
 .slogan {
@@ -64,6 +65,11 @@ a {
 .m-0 {
     margin: 0;
 }
+
+.mc-0 {
+    margin: 0 auto;
+}
+
 
 .pt-3 {
     padding-top: 3rem;
@@ -85,9 +91,10 @@ a {
     position: relative;
   }
 
-.hero-text {
+  .hero-text {
     font-size: 2rem;
     padding: 1rem;
+    padding-left: 3rem;
     text-align: center;
     bottom: 2rem;
     background-color: var(--light-grey-transparent);
@@ -100,6 +107,13 @@ a {
     margin: 0 auto;
     padding: 1rem;
     padding-top: 3rem;
+}
+
+.col-6-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 /* buttons */
