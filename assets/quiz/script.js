@@ -14,7 +14,7 @@ questions = [{
     explanation: "Across their lifetimes, on average a woman will spend seven years more performing unpaid work than a man",
     answer: true
 }, {
-    question: "parents are more likely to teach their sons core breadwinning skills like how to build credit and invest their money?",
+    question: "Parents are more likely to teach their sons core breadwinning skills like how to build credit and invest their money?",
     explanation: "Girls, meanwhile, are more likely to be taught how to track their spending and budget.",
     answer: true
 }, {
@@ -22,11 +22,11 @@ questions = [{
     explanation: "Women who asked obtained a raise 15% of the time, while men obtained a pay increase 20% of the time.",
     answer: false
 }, {
-    question: "THE WAGE GAP EXISTS BECAUSE WOMEN CHOOSE LOWER-PAYING CAREERS ?",
+    question: "The wage gap exists because woman choose lower-paying careers ?",
     explanation: "Women are more limited than men in terms of livelihood options due to gender discrimination (especially in STEM fields such as science, technology, engineering, and mathematics — subjects that women perform well in at school but tend not to follow as careers).",
     answer: false
 }, {
-    question: "Gender inbalance issues have improved over time?",
+    question: "Gender imbalance issues have improved over time?",
     explanation: "Women are more limited than men in terms of livelihood options due to gender discrimination (especially in STEM fields such as science, technology, engineering, and mathematics — subjects that women perform well in at school but tend not to follow as careers).",
     answer: false
 }, {
@@ -38,7 +38,7 @@ questions = [{
 
 let answer = null
 let explanation = null
-let timer = 4000;
+let timer = 0;
 
 let rightAnswer = 0
 let wrongAnswer = 0
@@ -64,15 +64,20 @@ function getRandomQuestion(){
     }
 }
 
+function charCount(str){
+    return str.length;
+}
+
 // Function to render question card element on the screen
 function renderCard(){
-    questionEl = document.querySelector('#quiz-El')
-    buttonContainer = document.querySelector('.button-container')
-    container = document.querySelector('.answer-popup')
-    questionEl.innerHTML = ''
+    questionEl = document.querySelector('#quiz-El');
+    buttonContainer = document.querySelector('.button-container');
+    container = document.querySelector('.answer-popup');
+    container.innerHTML = '';
+    questionEl.innerHTML = '';
 
     // Call Get random question function
-    question = getRandomQuestion()
+    question = getRandomQuestion();
 
     if (question != null){
         questionEl.innerHTML = `
@@ -89,7 +94,7 @@ function renderCard(){
         <h1>End of quiz</h1>
         <p>Right answers: ${rightAnswer}</p>
         <p>Wrong answers: ${wrongAnswer}</p>
-        <p>Percentage: ${calcAnswerPercentage(rightAnswer, wrongAnswer)}%</p>
+        <p>Percentage: ${calcAnswerPercentage(rightAnswer, wrongAnswer).toFixed(0)}%</p>
         </div> 
         `;
         container.remove();
@@ -103,22 +108,47 @@ function calcAnswerPercentage(rightAnswer, wrongAnswer){
     return percentage
 }
 
+// Hide element function
+function hideElem(elem) {
+    elem.classList.add('hide')
+    elem.classList.remove('show')
+    canClick = true;
+}
+
+// Show element function
+function showElem(elem) {
+    elem.classList.add('show')
+    elem.classList.remove('hide')
+}
+
+
 // Render explanation in the card if answer was wrong
 function renderExplanation(){
-    container = document.querySelector('.answer-popup')
+    const container = document.querySelector('.answer-popup')
+    const btnNext = document.querySelector('.btn-next')
+
+    // Set timer to char count of explanation * 60ms
+    if (question != null) {
+        timer = charCount(explanation) * 60;
+    }
+
     container.classList.remove('hidden')
+    // Show explanation
+    showElem(container);
+    showElem(btnNext);
     
-    container.classList.add('show')
-    
+    // Set timer to hide explanation
     setTimeout(function(){
-        container.classList.remove('show')
-        container.classList.add('hide')
+        hideElem(btnNext);
+        hideElem(container);
     }, timer);
+
+    // Hidden but visible by screen readers
     setTimeout(function(){
         container.classList.add('hidden')
-        container.classList.remove('hide')
     }, timer + 300);
 
+    // Render explanation
     container.innerHTML = `
             <div class="quiz-card">
                 <h3 class="wrong">Wrong answer</h3>
@@ -127,6 +157,7 @@ function renderExplanation(){
            
             `;
 
+    // clear element after specified time
     setTimeout(function(){
         container.innerHTML = ''
     }, timer + 300);
@@ -159,21 +190,29 @@ function buzzEffect(answer){
 // Add event listeners to the answer 'Yes' and 'No' buttons
 function addListeners(){
     renderCard();
-    const btnTrue = document.querySelector('#btn-true')
-    const btnFalse = document.querySelector('#btn-false')
+    const btnTrue = document.querySelector('#btn-true');
+    const btnFalse = document.querySelector('#btn-false');
+    const btnNext = document.querySelector('.btn-next');
 
     btnTrue.addEventListener('click', function () {
         if (canClick){
-            checkAnswer(true)
+            checkAnswer(true);
             canClick = false;
         }
     });
 
     btnFalse.addEventListener('click', function () {
         if (canClick){
-            checkAnswer(false)
+            checkAnswer(false);
             canClick = false;
         }
+    });
+
+    btnNext.addEventListener('click', function () {
+        renderCard();
+        canClick = true;
+        renderNextQuestion(0, false);
+        hideElem(btnNext);
     });
 }
 
@@ -182,53 +221,49 @@ addListeners();
 // Create function to check if the answer is correct
 // Keep right and wrong answer count to display percentage at the end of the quiz
 function checkAnswer(inputAnswer){
-
     if (inputAnswer == answer){
-        buzzEffect(true)
-        rightAnswer++
+        buzzEffect(true);
+        rightAnswer++;
         renderNextQuestion(100);
     }else{
-        buzzEffect(false)
-        wrongAnswer++
-        renderExplanation()
-        renderNextQuestion(timer);
+        buzzEffect(false);
+        wrongAnswer++;
+        renderExplanation();
+        // Clear next question timer
+        renderNextQuestion(timer, true);
     }
     
 }
 
 // Render next question after specified time
-function renderNextQuestion(timer){
-    setTimeout(function(){
+function renderNextQuestion(timer, state){
+    timeOut = setTimeout(function(){
         renderCard();
         canClick = true;
     }, timer);
+
+    if (state == true){
+        clearTimeout(timeOut);
+    }
 }
-
-
-// TODO: 7 memorize question index number to avoid duplicate questions in the future
-
-
 
 // **Question randomized background color render**
 
-// TODO: 9 create list of colors
-
-
-// TODO: 10 create function to generate random color based on color list
+// Create list of colors
+// Function to generate random color based on color list
 function getRandomColor(){
     const colors = ['#EDDCD2', '#FFF1E6', '#FDE2E4', '#FAD2E1', '#C5DEDD', '#DBE7E4', '#F0EFEB', '#D6E2E9', '#BCD4E6', '#99C1DE']
     let randomColor = colors[Math.floor(Math.random() * colors.length)];
-    return randomColor
+    return randomColor;
 }
 
-// TODO: 11 based on click event o a button add class to the 'main-container' to change color
-
+// Based on click event o a button add class to the 'main-container' to change color
 function changeColor(){
-    let randomColor = getRandomColor()
-    let mainContainer = document.querySelector('.main-container')
-    cardWrapper = document.querySelector('.card-wrapper')
-    answerPopup = document.querySelector('.answer-popup')
-    mainContainer.style.backgroundColor = randomColor
-    cardWrapper.style.backgroundColor = randomColor
-    answerPopup.style.backgroundColor = randomColor
+    let randomColor = getRandomColor();
+    let mainContainer = document.querySelector('.main-container');
+    cardWrapper = document.querySelector('.card-wrapper');
+    answerPopup = document.querySelector('.answer-popup');
+    mainContainer.style.backgroundColor = randomColor;
+    cardWrapper.style.backgroundColor = randomColor;
+    answerPopup.style.backgroundColor = randomColor;
 }
