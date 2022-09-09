@@ -54,14 +54,17 @@ body {
     }
 }
 
-
-/* Navbar settings */
-
-.active {
-    background-color: white;
+/*404 page*/
+  
+h3 {
+    margin-top: 20%;
+    margin-left: 20%;
+    font-family: 'Inconsolata', monospace;
+    color: #333333;
 }
 
-.navbar-nav>li>a {
-    color: black;
-    font-weight: bold;
+h3 > a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(53, 96, 195);
 }
