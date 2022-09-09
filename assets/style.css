@@ -48,7 +48,7 @@ body {
 body {
     font-size: 1.8rem;
     font-family: "Poppins", sans-serif;
-    background: radial-gradient(circle at right top, #FDE2E4, #DBE7E4)
+    background: radial-gradient(circle at right top, #FDE2E4, #DBE7E4);
 }
 
 a {
@@ -243,6 +243,26 @@ h3 > a {
 }
 
 /* Small screen settings */
+@media screen and (max-width: 768px) {
+    .resource-secondary {
+        width: 100%;
+    }
+
+    .resource-secondary-image-container,
+    .secondary-text-container,
+    .main-text-container {
+        width: 95%;
+    }
+
+    .resource-secondary-left {
+        flex-direction: column;
+    }
+
+    .resource-secondary-small {
+        flex-direction: column-reverse;
+    }
+}
+
 @media screen and (min-width: 576px) {
     .slogan {
         font-size: 3.6rem;
