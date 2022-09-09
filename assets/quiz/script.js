@@ -52,7 +52,7 @@ function getRandomQuestion() {
     qLength = questions.length;
     indexOfQuestion = Math.floor(Math.random() * qLength);
 
-    // TODO: 4 Select question from data-set
+    // Select question from data-set
     if (questions.length > 0) {
         randomQuestion = questions[indexOfQuestion];
         questions.splice(indexOfQuestion, 1);
@@ -66,6 +66,13 @@ function getRandomQuestion() {
 
 function charCount(str) {
     return str.length;
+}
+
+// Calculate percentage of right answers
+function calcAnswerPercentage(rightAnswer, wrongAnswer) {
+    let totalAnswer = rightAnswer + wrongAnswer
+    let percentage = (rightAnswer / totalAnswer) * 100
+    return percentage
 }
 
 // Answer 8 quiz questions to test your knowledge, 
@@ -96,7 +103,6 @@ function renderCard() {
         `;
     } else {
         // If there are no more questions, render the result card
-
         buttonContainer.innerHTML = ''
         questionEl.innerHTML = `
         <div class="question">
@@ -108,15 +114,8 @@ function renderCard() {
             </div>
         </div> 
         `;
-        container.remove();
+        container.innerHTML = '';
     }
-}
-
-// Calculate percentage of right answers
-function calcAnswerPercentage(rightAnswer, wrongAnswer) {
-    let totalAnswer = rightAnswer + wrongAnswer
-    let percentage = (rightAnswer / totalAnswer) * 100
-    return percentage
 }
 
 // Hide element function
@@ -132,6 +131,9 @@ function showElem(elem) {
     elem.classList.remove('hide')
 }
 
+// Initialize timeout variable
+let hideElemTomeOut = null;
+let clearContainerTimeOut = null;
 
 // Render explanation in the card if answer was wrong
 function renderExplanation() {
@@ -143,13 +145,13 @@ function renderExplanation() {
         timer = charCount(explanation) * 60;
     }
 
+    // Show container and hide next button
     container.classList.remove('hidden')
-    // Show explanation
     showElem(container);
     showElem(btnNext);
 
     // Set timer to hide explanation
-    setTimeout(function () {
+    hideElemTomeOut = setTimeout(function () {
         hideElem(btnNext);
         hideElem(container);
     }, timer);
@@ -165,16 +167,14 @@ function renderExplanation() {
                 <h4 class="wrong text-center"><i class="fa-solid fa-exclamation"></i></h4>
                 <p>${explanation}</p>
             </div>
-           
             `;
 
     // clear element after specified time
-    setTimeout(function () {
+    clearContainerTimeOut = setTimeout(function () {
         container.innerHTML = ''
     }, timer + 300);
 
 }
-
 
 // Wrong answer effect function
 // Get card element and add wrong class to it
@@ -197,10 +197,17 @@ function buzzEffect(answer) {
     changeColor();
 }
 
+// Render next question after specified time
+let timeOut = null;
+function renderNextQuestion(timer) {
+    timeOut = setTimeout(function () {
+        renderCard();
+        canClick = true;
+    }, timer);
+}
 
 // Add event listeners to the answer 'Yes' and 'No' buttons
 init = 0;
-
 function addListeners() {
     const btnTrue = document.querySelector('#btn-true');
     const btnFalse = document.querySelector('#btn-false');
@@ -233,7 +240,8 @@ function addListeners() {
     btnNext.addEventListener('click', function () {
         renderCard();
         canClick = true;
-        renderNextQuestion(0, false);
+        // Cancel timeout function to hide explanation
+        clearTimeout(timeOut);
         hideElem(btnNext);
     });
 }
@@ -252,25 +260,11 @@ function checkAnswer(inputAnswer) {
         wrongAnswer++;
         renderExplanation();
         // Clear next question timer
-        renderNextQuestion(timer, false);
-    }
-}
-
-// Render next question after specified time
-function renderNextQuestion(timer, state) {
-    timeOut = setTimeout(function () {
-        renderCard();
-        canClick = true;
-    }, timer);
-    // If state is false, clear timeout
-    if (state == true) {
-        clearTimeout(timeOut);
+        renderNextQuestion(timer);
     }
 }
 
 // **Question randomized background color render**
-
-// Create list of colors
 // Function to generate random color based on color list
 function getRandomColor() {
     const colors = ['#EDDCD2', '#FFF1E6', '#FDE2E4', '#FAD2E1', '#C5DEDD', '#DBE7E4', '#F0EFEB', '#D6E2E9', '#BCD4E6', '#99C1DE']
