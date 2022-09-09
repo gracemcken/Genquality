@@ -8,8 +8,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
-    
-    padding: .5rem;
+    padding: 3rem .5rem;
     box-sizing: border-box;
     transition: background-color .5s ease-in-out;
 }
@@ -62,7 +61,7 @@
 
 .card-wrapper {
     border-radius: 10px;
-    background-color: lightblue;
+    background-color: #D6E2E9;
     opacity: .9;
     transition: background-color .5s ease-in-out;
     position: relative;
@@ -80,11 +79,16 @@
     border-radius: 10px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    padding: 1rem;
+    padding: 2rem 1rem;
+}
+
+#quiz-El{
+    width: 100%;
 }
 
 .question {
     padding-bottom: 1rem;
+    min-width: 100%;
 }
 
 .quiz-card h3{
@@ -101,6 +105,19 @@
     font-size: 18px;
 }
 
+.question h1 {
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.question span {
+    font-family: 'Inconsolata', monospace;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    opacity: .9;
+    border: 1px solid #111;
+}
 
 /* Buttons container */
 .button-container {
@@ -110,20 +127,24 @@
 }
 
 /* Buttons */
+.card-wrapper a,
 .card-wrapper button {
     font-size: 1.5rem;
     text-transform: uppercase;
     background-color: transparent;
+    text-align: center;
     border: none;
     width: 100%;
     border-radius: 0;
     cursor: pointer;
 }
 
+.card-wrapper a i,
 .card-wrapper button i {
     transition: transform 0.3s ease-in-out;
 }
 
+.card-wrapper a:hover i,
 .card-wrapper button:hover i {
     transform: scale(1.2);
 }
@@ -225,7 +246,7 @@
     width: 100%;
     margin-top: 2rem;
     border-radius: 10px;
-    background-color: lightblue;
+    background-color: #D6E2E9;
     transition: background-color .5s ease-in-out;
     opacity: .9;
 }
@@ -233,10 +254,6 @@
 .quiz-card .wrong {
     color: red;
     margin-top: 0;
-}
-
-.quiz-card .correct {
-    color: green;
 }
 
 .quiz-card i {
@@ -248,7 +265,6 @@
     opacity: 0;
     transition: all 0.4s ease-in-out;
 }
-
 
 /* Added for accessibility https://a11y-guidelines.orange.com/en/web/components-examples/accessible-hiding/ */
 .hidden {
