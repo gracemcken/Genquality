@@ -1,20 +1,4 @@
 
-body {
-    margin: 0;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Karla:wght@300;400&display=swap');
-
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Karla', sans-serif;
-    color: #111111;
-}
-
-p {
-    font-family: 'Inconsolata', monospace;
-    color: #333333;
-}
-
 .main-container {
     position: relative;
     width: 100vw;
