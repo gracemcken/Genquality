@@ -112,7 +112,7 @@ The goal of our website is to see how aware the user really is about the gender 
   - Because our target audiences were specifically employers, employees and activists, we included a resource section for each.
   - Each section has a link to information relevant to each audience target.
   
-  ![resource-panels]()
+  ![resource-panels](docs/screenshots/resource-panel.png)
 
 
 * __About Us Cards__
