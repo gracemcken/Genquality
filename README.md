@@ -1,4 +1,4 @@
-![By Team'Quality](project_files/readme_files/logo-readme.png)
+![By Team'Quality](docs/screenshots/logo-readme.png)
 - [Site Overview](#site-overview)
   - [Goal](#goal)
   - [Technologies used](#technologies-used)
@@ -15,6 +15,8 @@
   - [Colour Scheme](#colour-scheme)
 - [Testing](#testing)
 - [The Team](#the-team)
+  - [Our members](#our-members)
+  - [Issues Encountered](#issues-encountered)
 - [Credits](#credits)
     - [Github cards](#github-cards)
     - [Images](#images-1)
@@ -100,7 +102,34 @@ The goal of our website is to see how aware the user really is about the gender 
 
 ![result](docs/screenshots/result.png)
 
+* __Resource Panels__
+  - User story: *As a user, I want to find out more information relating to the topic with ease.*
+  - Because our target audiences were specifically employers, employees and activists, we included a resource section for each.
+  - Each section has a link to information relevant to each audience target.
+  
+  ![resource-panels]()
+
+
+* __About Us Cards__
+  - User story: *As a user, I want to find out who created the website and why it was made.*
+  - The last thing we wanted to include was a brief introduction to the team behind our project.
+  - To do this we used some cards to display each team member's github profile.
+
+![about-panels](docs/screenshots/about-panels.png)
+
+* __About the Project__
+  - The final thing we included was a short informational paragraph about the project and why it was created. 
+  - We left this until the end as we felt the main purpose of the website was more important than explaining the origin of the project.
+
+![about-project](docs/screenshots/about-project.png)
+
 ## Future Features
+
+Should we continue to work on this project, there are a number of features we would like to implement to improve the website. 
+- Add a scoreboard for quiz results
+- Expand the questions pool
+- Add images to questions
+- Expand social media integration
 
 # Design
 We went into this project with the aim of being unbiased to any gender, and also making the information as clear and concise as possible. 
@@ -127,14 +156,22 @@ For our colour scheme, we used coolors.co to generate a palette that we felt was
 
 
 # The Team
-
+## Our members
 * https://github.com/petrugio
 * https://github.com/Raivis80
 * https://github.com/lukaszkukla
 * https://github.com/Tiyko
 * https://github.com/gracemcken
 
+## Issues Encountered
 
+As this was the first group project for many of our team members, it presented a learning curve for everyone! Among the issues outside of actual bugs that we encountered as a team was:
+- Some members using px vs rem/em
+- Difficultly with push/pull and merging
+- min width vs max width for pages
+  
+<br>
+  Our main overall issues relate to the fact that each team member had different ways and habits of doing things, so to make our code across all pages consistent was a challenge. We resolved as much as we could once the majority of the code was finalised and fixed inconsistencies during final clean up before submission.
 
 <hr>
 
