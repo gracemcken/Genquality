@@ -15,6 +15,7 @@
   - [Colour Scheme](#colour-scheme)
 - [Testing](#testing)
   - [Functional Testing](#functional-testing)
+  - [Browser Testing](#browser-testing)
   - [Bugs](#bugs)
   - [Known Issues](#known-issues)
 - [The Team](#the-team)
@@ -24,6 +25,7 @@
     - [Github cards](#github-cards)
     - [Images](#images-1)
     - [Version Control](#version-control)
+- [Acknowledgments](#acknowledgments)
 
 # Site Overview
 Genquality is a website built as a project for September's Hackathon with Code Institute, Deloitte and Trust in Soda. The theme given was 'Closing the gender gap' and so we decided a good way to tackle this issue was with an educational and enlightening quiz, along with some resources and information on how the user can make a difference.
@@ -188,6 +190,29 @@ For our colour scheme, we used coolors.co to generate a palette that we felt was
       * Resources - takes the user to the Resources Page - Tested works as intended.
       * About - takes the user to the About Page - Tested works as intended.
       * GitHub cards links - Opens clicked GitHub profile - Tested works as intended.
+
+## Browser Testing 
+- Page behaves as expected in all browsers tested. The website was tested in [Chrome](https://www.google.com/intl/en_ie/chrome/), [Firefox](https://www.mozilla.org/en-US/firefox/new/),
+[Brave Browser](https://brave.com/),
+[Edge](https://www.microsoft.com/en-us/edge) and [Opera](https://www.opera.com).
+
+
+- On the mobile and tablet website was tested in
+[Chrome](https://play.google.com/store/apps/details?id=com.android.chrome), [Firefox](https://play.google.com/store/apps/details?id=org.mozilla.firefox).
+
+- Best Practices:
+
+    - HTML doc type included in the html for all pages.
+
+- Search Engine Optimization:
+
+    - Semantic HTML included in all internal pages created.
+
+    - All links have descriptive text added.
+
+    - Alt attributes added to all images.
+
+    - Meta-data descriptions added to each internal page created.
 ## Bugs
 
 Bug | Status 
@@ -228,13 +253,20 @@ Github cards were generated using [GitHub Dev Widget](https://github-devprofile-
 
 ### Images
 * Some images were taken from [pexels.com](pexels.com).
-* [This image](assets/images/gender-equality.jpg) by <a href="https://www.freepik.com/free-vector/gender-equality-concept_8944679.htm#query=gender%20equality&position=13&from_view=keyword">Freepik</a>
-* [This image](assets/images/equal.jpeg) by <a href="https://www.freepik.com/free-vector/gender-equality-concept-with-man-woman_8786149.htm#query=gender%20equality&position=17&from_view=keyword">Freepik</a>
-* [This image](assets/images/equality2.jpeg) by <a href="https://www.freepik.com/free-vector/gender-equality-illustration-style_8918398.htm#query=gender%20equality&position=4&from_view=keyword">Freepik</a>
+* Other images were taken from [freepik.com](freepik.com)
 
 <hr>
 
 ### Version Control
 *   Git was used as the version control software. Commands such as git add ., git status, git commit and git push were used to add, save, stage and push the code to the GitHub repository where the source code is stored.
 
-* [GitKraken](https://www.gitkraken.com/) was also used for git version control when working locally from my PC.
+* [GitKraken](https://www.gitkraken.com/) was also used for git version control when working locally from the PC.
+
+# Acknowledgments
+
+A big shout out to [Code Institute](https://codeinstitute.net/ie/) 
+                   [Deloitte](https://www2.deloitte.com/ie/en.html)
+                   [Trust in SODA](https://www.trustinsoda.com/)
+
+for providing us with the opportunity to Participate in this Hackathon.
+Also to our facilitator Chris, whom was immensely helpful during this project.
