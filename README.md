@@ -2,17 +2,19 @@
 - [Site Overview](#site-overview)
   - [Goal](#goal)
   - [Technologies used](#technologies-used)
+- [UX](#ux)
+  - [Target Audience](#target-audience)
   - [User Stories](#user-stories)
-  - [Features](#features)
-    - [Existing Features](#existing-features)
-    - [Future Features](#future-features)
-  - [Design](#design)
-    - [Wireframes](#wireframes)
-    - [Typography](#typography)
-    - [Images](#images)
-    - [Colour Scheme](#colour-scheme)
-  - [Testing](#testing)
-  - [The Team](#the-team)
+- [Features](#features)
+  - [Existing Features](#existing-features)
+  - [Future Features](#future-features)
+- [Design](#design)
+  - [Wireframes](#wireframes)
+  - [Typography](#typography)
+  - [Images](#images)
+  - [Colour Scheme](#colour-scheme)
+- [Testing](#testing)
+- [The Team](#the-team)
 - [Credits](#credits)
     - [Github cards](#github-cards)
     - [Images](#images-1)
@@ -43,39 +45,89 @@ The goal of our website is to see how aware the user really is about the gender 
 - [Pesticide Chrome extension](https://chrome.google.com/webstore/detail/pesticide-for-chrome-with/neonnmencpneifkhlmhmfhfiklgjmloi) during development.
 - [Am I Responsive](http://ami.responsivedesign.is/) for testing and to make responsive image.
 
+# UX
+## Target Audience
+* Employees
+* Employers
+* Activists
+* Those who want to make a difference
+
 ## User Stories
+* As a first time visitor to the website, I want to know what it's about as soon as I land on the home page.
+* As a user, I want to be able to navigate the website easily and always know what page I'm on.
+* As a user I want to be able to have quick access to a fun quiz from both the landing page and a dedicated area in the nav bar.
+* As a user, I want to find out more information relating to the topic with ease.
+* As a user, I want to find out who created the website and why it was made.
+# Features
 
-## Features
+## Existing Features
+* __Hero image__
+  - User story: *As a first time visitor to the website, I want to know what it's about as soon as I land on the home page.*
+  - We chose a hero image that we felt conveys the topic of the website immediately and catches attention.
+  - Over the hero image, we have some text reiterating the point of the website.
+  
+![hero-image](project_files/readme_files/hero-image.png)
 
-### Existing Features
+* __Navigation Bar__
+  - User story: *As a user, I want to be able to navigate the website easily and always know what page I'm on.*
+  - Our nav bar includes the website title, logo and links to all main aspects of the website.
+  - Whichever page the user is currently on is highlighted in the nav bar.
 
-### Future Features
+![nav-bar](project_files/readme_files/nav-bar.png)
 
-## Design
+* __Quiz Button__
+  - User story: *As a user I want to be able to have quick access to a fun quiz from both the landing page and a dedicated area in the nav bar.*
+  - We included a button that redirects the user straight to the quiz page from the landing page. 
+  - This means the user can go straight from reading about the topic to the quiz.
+
+![quiz-button](project_files/readme_files/quiz-button.png)
+
+* __Landing Page Information & Graphic__
+  - User story: *As a first time visitor to the website, I want to know what it's about as soon as I land on the home page.*
+  - Also included on the landing page is a colourful graphic to portray the topic.
+  - Beside it we also have included a small paragraph of text stating some information about the topic, so that the user has a brief idea what the website entails.
+
+![landing](project_files/readme_files/landing-bottom.png)
+
+* __Quiz__
+  - Our quiz that was built using JavaScript gives a series of 8 questions. 
+  - Should the user answer correctly, the quiz moves onto the next question.
+  - If the user answers incorrectly, the quiz gives an explanation as to why they are wrong.
+
+![quiz-wrong](project_files/readme_files/quiz-wrong.png)
+
+  - At the end of the quiz, it displays the user's results and the option to restart or exit.
+  - The exit button brings the user straight to the resources page so that they can learn more about the topic and perhaps improve their score in the future.
+
+![result](project_files/readme_files/result.png)
+
+## Future Features
+
+# Design
 We went into this project with the aim of being unbiased to any gender, and also making the information as clear and concise as possible. 
 
-### Wireframes
+## Wireframes
 
 [Wireframe](project_files/wireframes/wireframe.png)
 
-### Typography
+## Typography
 
 For our fonts, we decided to use 'Karla', a sans serif font, and 'Inconsolata'. We felt these two fonts complimented each other well; the simplicity of 'Inconsolata' helping us portray our information as factual and official.
 
-### Images
+## Images
 
 Images that were used varied from stock images of co-workers, to protest signs and cartoon illustrations. We wanted to show all the different sides to this topic and we feel the images we've chosen show this.
 
-### Colour Scheme
+## Colour Scheme
 
 For our colour scheme, we used coolors.co to generate a palette that we felt was neutral enough not to bias any particular gender, and was also light enough that text and other images would contrast well with the colours. 
 ![Colour Scheme](assets/../project_files/readme_files/colour-palette.png)
 
-## Testing
+# Testing
 
 
 
-## The Team
+# The Team
 
 * https://github.com/petrugio
 * https://github.com/Raivis80
