@@ -14,10 +14,12 @@ p {
     --rep-red: #A20F88;
     --rep-red-dark: #760C63;
     --light-pink: #FAD2E1;
+    --salmon-pink: #FFE7E7;
     --violet: #B983FF;
     --violet-dark: #946acc;
-    --grey: #3A3A3A;
+    --grey-dark: #3A3A3A;
     --grey: #FAFAFA;
+    --grey-light: #F2F2F2;
     --light-grey-transparent: #f1f1f193;
     --white: #FFFFFF;
     --black: #000000;
@@ -48,7 +50,6 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--grey);
 }
 
 .main-wrapper {
@@ -75,11 +76,20 @@ a {
     padding-top: 3rem;
 }
 
+.py-3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
 /* navbar */
 .navbar {
     width: 100%;
     margin-bottom: 0;
     position: fixed;
+}
+
+.navbar-brand {
+    color: white;
 }
 
 .hero-image {
@@ -116,6 +126,10 @@ a {
     position: relative;
 }
 
+.p-logo {
+    padding-left: 7rem;
+}
+
 /* buttons */
 
 #btn-quiz {
@@ -131,6 +145,42 @@ a {
 }
 
 
+/* resources */
+.hero-resources {
+    background-image: url("../images/gender-equality.jpeg");
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.resource-main-img {
+    width: 100%;
+    padding-top: 5rem;
+    min-height: 50vh;
+}
+
+.resource-secondary-image {
+    width: 100%;
+}
+
+.row-white {
+    background: var(--white);
+}
+
+.row-grey-light {
+    background: var(--grey-light);
+}
+
+.row-salmon-pink {
+    background: var(--salmon-pink);
+}
+
+.max-width-40 {
+    max-width:40rem;
+}
+
 @media screen and (min-width: 576px) {
 
 
@@ -138,6 +188,15 @@ a {
         font-size: 3.6rem;
     }
 }
+
+@media screen and (min-width: 1000px) {
+    .pr-mw-1000 {        
+        padding-right: 3rem;
+    }
+    
+    .pl-mw-1000 {
+        padding-left: 3rem;
+    }
 
 
 /* QUIZZZZZZZ */
