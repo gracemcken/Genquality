@@ -50,7 +50,6 @@ The goal of our website is to see how aware the user really is about the gender 
 * Employees
 * Employers
 * Activists
-* Those who want to make a difference
 
 ## User Stories
 * As a first time visitor to the website, I want to know what it's about as soon as I land on the home page.
@@ -66,40 +65,40 @@ The goal of our website is to see how aware the user really is about the gender 
   - We chose a hero image that we felt conveys the topic of the website immediately and catches attention.
   - Over the hero image, we have some text reiterating the point of the website.
   
-![hero-image](project_files/readme_files/hero-image.png)
+![hero-image](docs/screenshots/hero-image.png)
 
 * __Navigation Bar__
   - User story: *As a user, I want to be able to navigate the website easily and always know what page I'm on.*
   - Our nav bar includes the website title, logo and links to all main aspects of the website.
   - Whichever page the user is currently on is highlighted in the nav bar.
 
-![nav-bar](project_files/readme_files/nav-bar.png)
+![nav-bar](docs/screenshots/nav-bar.png)
 
 * __Quiz Button__
   - User story: *As a user I want to be able to have quick access to a fun quiz from both the landing page and a dedicated area in the nav bar.*
   - We included a button that redirects the user straight to the quiz page from the landing page. 
   - This means the user can go straight from reading about the topic to the quiz.
 
-![quiz-button](project_files/readme_files/quiz-button.png)
+![quiz-button](docs/screenshots/quiz-button.png)
 
 * __Landing Page Information & Graphic__
   - User story: *As a first time visitor to the website, I want to know what it's about as soon as I land on the home page.*
   - Also included on the landing page is a colourful graphic to portray the topic.
   - Beside it we also have included a small paragraph of text stating some information about the topic, so that the user has a brief idea what the website entails.
 
-![landing](project_files/readme_files/landing-bottom.png)
+![landing](docs/screenshots/landing-bottom.png)
 
 * __Quiz__
   - Our quiz that was built using JavaScript gives a series of 8 questions. 
   - Should the user answer correctly, the quiz moves onto the next question.
   - If the user answers incorrectly, the quiz gives an explanation as to why they are wrong.
 
-![quiz-wrong](project_files/readme_files/quiz-wrong.png)
+![quiz-wrong](docs/screenshots/quiz-wrong.png)
 
   - At the end of the quiz, it displays the user's results and the option to restart or exit.
   - The exit button brings the user straight to the resources page so that they can learn more about the topic and perhaps improve their score in the future.
 
-![result](project_files/readme_files/result.png)
+![result](docs/screenshots/result.png)
 
 ## Future Features
 
@@ -108,7 +107,7 @@ We went into this project with the aim of being unbiased to any gender, and also
 
 ## Wireframes
 
-[Wireframe](project_files/wireframes/wireframe.png)
+[Wireframe](docs/wireframes/wireframe.png)
 
 ## Typography
 
@@ -121,7 +120,7 @@ Images that were used varied from stock images of co-workers, to protest signs a
 ## Colour Scheme
 
 For our colour scheme, we used coolors.co to generate a palette that we felt was neutral enough not to bias any particular gender, and was also light enough that text and other images would contrast well with the colours. 
-![Colour Scheme](assets/../project_files/readme_files/colour-palette.png)
+![Colour Scheme](docs/screenshots/colour-palette.png)
 
 # Testing
 
