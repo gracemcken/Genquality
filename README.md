@@ -159,6 +159,21 @@ Should we continue to work on this project, there are a number of features we wo
 # Design
 We went into this project with the aim of being unbiased to any gender, and also making the information as clear and concise as possible. 
 
+- Best Practices:
+
+    - HTML doc type included in the html for all pages.
+
+- Search Engine Optimization:
+
+    - Semantic HTML included in all internal pages created.
+
+    - All links have descriptive text added.
+
+    - Alt attributes added to all images.
+
+    - Meta-data descriptions added to each internal page created.
+
+
 ## Wireframes
 
 [Wireframe](docs/wireframes/wireframe.png)
@@ -220,19 +235,6 @@ For our colour scheme, we used coolors.co to generate a palette that we felt was
 - On the mobile and tablet website was tested in
 [Chrome](https://play.google.com/store/apps/details?id=com.android.chrome), [Firefox](https://play.google.com/store/apps/details?id=org.mozilla.firefox).
 
-- Best Practices:
-
-    - HTML doc type included in the html for all pages.
-
-- Search Engine Optimization:
-
-    - Semantic HTML included in all internal pages created.
-
-    - All links have descriptive text added.
-
-    - Alt attributes added to all images.
-
-    - Meta-data descriptions added to each internal page created.
 
 ## Validator Testing
 ![js](docs/testing/js-hint-ressult1.png)
