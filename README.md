@@ -14,6 +14,8 @@
   - [Images](#images)
   - [Colour Scheme](#colour-scheme)
 - [Testing](#testing)
+  - [Bugs](#bugs)
+  - [Known Issues](#known-issues)
 - [The Team](#the-team)
   - [Our members](#our-members)
   - [Issues Encountered](#issues-encountered)
@@ -152,8 +154,18 @@ For our colour scheme, we used coolors.co to generate a palette that we felt was
 ![Colour Scheme](docs/screenshots/colour-palette.png)
 
 # Testing
+## Bugs
 
+Bug | Status 
+----|-------
+Quiz page would not scroll| Fixed
+Focus remained on button on quiz page| Fixed
+Quiz container moved to the corner of page| 
 
+## Known Issues
+External code used has caused a number of known issues.
+* Github cards display good only as low as 330px
+* Github cards lack alt tags reducing accessibility.
 
 # The Team
 ## Our members
@@ -168,7 +180,7 @@ For our colour scheme, we used coolors.co to generate a palette that we felt was
 As this was the first group project for many of our team members, it presented a learning curve for everyone! Among the issues outside of actual bugs that we encountered as a team was:
 - Some members using px vs rem/em
 - Difficultly with push/pull and merging
-- min width vs max width for pages
+- Min width vs max width for pages
   
 <br>
   Our main overall issues relate to the fact that each team member had different ways and habits of doing things, so to make our code across all pages consistent was a challenge. We resolved as much as we could once the majority of the code was finalised and fixed inconsistencies during final clean up before submission.
