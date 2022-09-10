@@ -1,4 +1,4 @@
-![By Team'Quality](docs/screenshots/logo-readme.png)
+![By Team'Quality](docs/screenshots/responsive.png)
 - [Site Overview](#site-overview)
   - [Goal](#goal)
   - [Technologies used](#technologies-used)
@@ -53,7 +53,7 @@ The goal of our website is to see how aware the user really is about the gender 
 - [Wave Chrome extension](https://wave.webaim.org/) to check web accessibility.
 - [Pesticide Chrome extension](https://chrome.google.com/webstore/detail/pesticide-for-chrome-with/neonnmencpneifkhlmhmfhfiklgjmloi) during development.
 - [Am I Responsive](http://ami.responsivedesign.is/) for testing and to make responsive image.
-- - [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript) functions and examples.
+- [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript) functions and examples.
 - [Visual Studio Code](https://code.visualstudio.com/) as a local IDE & repository.
 - [Favicon.io](https://favicon.io/favicon-generator/) to create a favicon.
 - [Font Awesome](https://fontawesome.com/) for icons.
@@ -246,11 +246,10 @@ Nav bar error | Resolved
 ![nav](docs/bugs/html_nav_bug.png)
 
 ## Known Issues
-External code used has caused a number of known issues.
+External code used has caused a number of known issues, along with browsers.
 * Github cards display good only as low as 330px
 * Github cards lack alt tags reducing accessibility.
-  
-  - On some mobile devices the logo image was misaligned in the nav bar in Firefox.
+* On some mobile devices the logo image was misaligned in the nav bar in Firefox.
 
 # The Team
 ## Our members
