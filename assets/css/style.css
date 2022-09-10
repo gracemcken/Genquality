@@ -126,7 +126,7 @@ a {
 
 /* Landing page settings */
 .hero-image {
-    background-image: url("/assets/images/diversity.jpeg");
+    background-image: url("../images/diversity.jpeg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
