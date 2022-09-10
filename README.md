@@ -51,6 +51,11 @@ The goal of our website is to see how aware the user really is about the gender 
 - [Wave Chrome extension](https://wave.webaim.org/) to check web accessibility.
 - [Pesticide Chrome extension](https://chrome.google.com/webstore/detail/pesticide-for-chrome-with/neonnmencpneifkhlmhmfhfiklgjmloi) during development.
 - [Am I Responsive](http://ami.responsivedesign.is/) for testing and to make responsive image.
+- - [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript) functions and examples.
+- [Visual Studio Code](https://code.visualstudio.com/) as a local IDE & repository.
+- [Favicon.io](https://favicon.io/favicon-generator/) to create a favicon.
+- [Font Awesome](https://fontawesome.com/) for icons.
+- [TinyPNG](https://tinypng.com/) to optimize images.
 
 # UX
 ## Target Audience
