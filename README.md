@@ -14,6 +14,7 @@
   - [Images](#images)
   - [Colour Scheme](#colour-scheme)
 - [Testing](#testing)
+  - [Functional Testing](#functional-testing)
   - [Bugs](#bugs)
   - [Known Issues](#known-issues)
 - [The Team](#the-team)
@@ -154,13 +155,46 @@ For our colour scheme, we used coolors.co to generate a palette that we felt was
 ![Colour Scheme](docs/screenshots/colour-palette.png)
 
 # Testing
+
+## Functional Testing
+- Upon opening the site link incorrectly: 404 Page should load automatically - Tested, the 404 Page loads up.
+- Upon opening the site link correctly: Homepage (start screen) should open - Tested, the site loads up.
+- From Homepage pressing on the nav links:
+  * Home - takes the user to the Homepage - Tested works as intended.
+  * Quiz and Take a Quiz button - takes the user to the Quiz page - Tested works as intended.
+  * Resources - takes the user to the Resources Page - Tested works as intended.
+  * About - takes the user to the About Page - Tested works as intended.
+- From Quiz page pressing on the nav links
+  * Home - takes the user to the Homepage - Tested works as intended.
+  * Quiz - takes the user to the Quiz page - Tested works as intended.
+  * Resources - takes the user to the Resources Page - Tested works as intended.
+  * About - takes the user to the About Page - Tested works as intended.
+  * Green Checkbox - starts the quiz - Tested works as intended.
+      - Green Checkbox - submit true answer to the question - Tested works as intended.
+      - Red X - submit false answer to the question - Tested works as intended.
+      - Green arrow - allows user to move to the next question before the correct answer box disappears. - Tested works as intended.
+      - When Quiz is finished:
+          * Green circle arrow - retake the quiz - Tested works as intended.
+          * Red right arrow - exit the quiz and open resource page  - Tested works as intended.
+   * Red X - takes the user back to the homepage
+ - Resource page - relevant links in different sections takes the user to external resources.
+      * Home - takes the user to the Homepage - Tested works as intended.
+      * Quiz - takes the user to the Quiz page - Tested works as intended.
+      * Resources - takes the user to the Resources Page - Tested works as intended.
+      * About - takes the user to the About Page - Tested works as intended.
+  - About page:
+      * Home - takes the user to the Homepage - Tested works as intended.
+      * Quiz - takes the user to the Quiz page - Tested works as intended.
+      * Resources - takes the user to the Resources Page - Tested works as intended.
+      * About - takes the user to the About Page - Tested works as intended.
+      * GitHub cards links - Opens clicked GitHub profile - Tested works as intended.
 ## Bugs
 
 Bug | Status 
 ----|-------
-Quiz page would not scroll| Fixed
-Focus remained on button on quiz page| Fixed
-Quiz container moved to the corner of page| 
+Quiz page would not scroll| Resolved
+Focus remained on button on quiz page| Resolved
+Quiz container moved to the corner of page| Resolved
 
 ## Known Issues
 External code used has caused a number of known issues.
