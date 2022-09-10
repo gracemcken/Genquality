@@ -292,7 +292,8 @@ h3 > a {
     }
 }
 
-* QUIZZZZZZZ */ .main-container {
+/* QUIZZZZZZZ */ 
+.main-container {
     position: relative;
     width: 100vw;
     min-height: 100vh;
@@ -561,7 +562,8 @@ h3 > a {
 
 /* Added for accessibility https://a11y-guidelines.orange.com/en/web/components-examples/accessible-hiding/ */
 .hidden {
-    resize: 0;
+    left: -1000px;
+    top: -1000px;
 }
 
 .show {
