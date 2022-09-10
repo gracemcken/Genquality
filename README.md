@@ -16,7 +16,9 @@
 - [Testing](#testing)
   - [Functional Testing](#functional-testing)
   - [Browser Testing](#browser-testing)
+  - [Validator Testing](#validator-testing)
   - [Bugs](#bugs)
+  - [Screenshots of bugs](#screenshots-of-bugs)
   - [Known Issues](#known-issues)
 - [The Team](#the-team)
   - [Our members](#our-members)
@@ -51,6 +53,11 @@ The goal of our website is to see how aware the user really is about the gender 
 - [Wave Chrome extension](https://wave.webaim.org/) to check web accessibility.
 - [Pesticide Chrome extension](https://chrome.google.com/webstore/detail/pesticide-for-chrome-with/neonnmencpneifkhlmhmfhfiklgjmloi) during development.
 - [Am I Responsive](http://ami.responsivedesign.is/) for testing and to make responsive image.
+- - [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript) functions and examples.
+- [Visual Studio Code](https://code.visualstudio.com/) as a local IDE & repository.
+- [Favicon.io](https://favicon.io/favicon-generator/) to create a favicon.
+- [Font Awesome](https://fontawesome.com/) for icons.
+- [TinyPNG](https://tinypng.com/) to optimize images.
 
 # UX
 ## Target Audience
@@ -112,7 +119,7 @@ The goal of our website is to see how aware the user really is about the gender 
   - Because our target audiences were specifically employers, employees and activists, we included a resource section for each.
   - Each section has a link to information relevant to each audience target.
   
-  ![resource-panels]()
+  ![resource-panels](docs/screenshots/resource-panel.png)
 
 
 * __About Us Cards__
@@ -213,6 +220,16 @@ For our colour scheme, we used coolors.co to generate a palette that we felt was
     - Alt attributes added to all images.
 
     - Meta-data descriptions added to each internal page created.
+
+## Validator Testing
+![js](docs/testing/js-hint-ressult1.png)
+![lighthouse](docs/testing/Screenshot-quiz-lighthouse.png)
+![wave](docs/testing/Screenshot-Wave-Test-Quiz.png)
+![css-test](docs/testing/W3C_CSS_validation.png)
+![html-resources](docs/testing/W3C-HTML-test-result-resources.png)
+![html-about](docs/testing/W3C-HTML-validation-about.png)
+![html-index](docs/testing/W3C-HTML-validation-Index.png)
+![html-quiz](docs/testing/W3C-HTML-validation-quiz.png)
 ## Bugs
 
 Bug | Status 
@@ -220,11 +237,20 @@ Bug | Status
 Quiz page would not scroll| Resolved
 Focus remained on button on quiz page| Resolved
 Quiz container moved to the corner of page| Resolved
+CSS property error | Resolved
+Empty heading error | Resolved
+Nav bar error | Resolved
+## Screenshots of bugs
+![css](docs/bugs/Css_property_error.png)
+![heading](docs/bugs/Empy_heading_error.png)
+![nav](docs/bugs/html_nav_bug.png)
 
 ## Known Issues
 External code used has caused a number of known issues.
 * Github cards display good only as low as 330px
 * Github cards lack alt tags reducing accessibility.
+  
+  - On some mobile devices the logo image was misaligned in the nav bar in Firefox.
 
 # The Team
 ## Our members
