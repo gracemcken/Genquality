@@ -92,6 +92,8 @@ a {
 }
 
 .pyx-20-3 {
+    font-family: 'Inconsolata', monospace;
+    color: #333333;
     padding-top: 20rem;
     padding-bottom: 20rem;
     padding-left: 3rem;
@@ -223,13 +225,6 @@ a {
 }
 
 /*404 page*/
-h3 {
-    margin-top: 20%;
-    margin-left: 30%;
-    font-family: 'Inconsolata', monospace;
-    color: #333333;
-}
-
 h3 > a {
     text-decoration: none;
     font-weight: 600;
