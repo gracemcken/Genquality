@@ -1,4 +1,17 @@
 ![By Team'Quality](docs/screenshots/responsive.png)
+
+<hr>
+
+View the repository in GitHub
+<a href="https://github.com/Raivis80/Genquality" target="_blank" rel="noopener">here</a>
+
+View the live project
+<a href="https://raivis80.github.io/Genquality/index.html" target="_blank" rel="noopener">here</a>
+
+<hr>
+
+# Table of Contents
+
 - [Site Overview](#site-overview)
   - [Goal](#goal)
   - [Technologies used](#technologies-used)
