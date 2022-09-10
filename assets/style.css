@@ -96,6 +96,10 @@ a {
     font-weight: bold;
 }
 
+.navbar-toggle {
+    cursor: pointer;
+}
+
 
 /* Logo */
 #logo {
