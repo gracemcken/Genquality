@@ -50,7 +50,6 @@ The goal of our website is to see how aware the user really is about the gender 
 * Employees
 * Employers
 * Activists
-* Those who want to make a difference
 
 ## User Stories
 * As a first time visitor to the website, I want to know what it's about as soon as I land on the home page.
