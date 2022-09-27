@@ -6,7 +6,7 @@ View the repository in GitHub
 <a href="https://github.com/rp42dev/Genquality" target="_blank" rel="noopener">here</a>
 
 View the live project
-<a href="https://raivis80.github.io/Genquality/index.html" target="_blank" rel="noopener">here</a>
+<a href="https://rp42dev.github.io/Genquality/index.html" target="_blank" rel="noopener">here</a>
 
 <hr>
 
