@@ -229,7 +229,7 @@ function addListeners() {
     btnFalse.addEventListener('click', function () {
         if (canClick) {
             if (init == 0) {
-                document.location.href = 'https://raivis80.github.io/Genquality/index.html';
+                document.location.href = 'https://rp42dev.github.io/Genquality/index.html';
                 init = 1;
             } else {
                 checkAnswer(false);
